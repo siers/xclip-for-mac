@@ -1,0 +1,25 @@
+-- This file has been generated from package.yaml by hpack version 0.28.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 891784082feade50d9269b77f4bef4833170d1d74a0dbaec90d0a9741ec668a5
+
+name:           xclip
+version:        0.1.0.0
+synopsis:       xclip for mac
+description:    xclip for mac
+author:         siers
+maintainer:     wimuan@gmail.com
+build-type:     Simple
+cabal-version:  >= 1.10
+license:        GPL
+
+executable xclip
+  main-is: Main.hs
+  default-extensions: OverloadedStrings
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -fwarn-unused-imports
+  build-depends:
+      base
+    , bytestring
+    , process
+  default-language: Haskell2010
