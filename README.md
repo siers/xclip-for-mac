@@ -24,5 +24,6 @@ If you write nothing to it, it will become `pbpaste`.
         isExecutable = true;
         executableHaskellDepends = [ base bytestring process ];
         description = "xclip for mac";
-        license = "GPL";
+        license = "unlicense";
+        platforms = stdenv.lib.platforms.darwin;
       }) {}
