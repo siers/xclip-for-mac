@@ -11,7 +11,7 @@ If you write nothing to it, it will become `pbpaste`.
 
     with (import <nixpkgs> {});
 
-    haskellPackages.callPackage ({ mkDerivation, base, bytestring, process, stdenv, fetchgit }:
+    haskellPackages.callPackage ({ mkDerivation, base, bytestring, process, fetchgit }:
       mkDerivation {
         pname = "xclip";
         version = "0.1.0.0";
@@ -25,5 +25,5 @@ If you write nothing to it, it will become `pbpaste`.
         executableHaskellDepends = [ base bytestring process ];
         description = "xclip for mac";
         license = "unlicense";
-        platforms = stdenv.lib.platforms.darwin;
+        platforms = lib.platforms.darwin;
       }) {}
